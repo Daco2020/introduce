@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import "reset.css";
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* start-page 시작 */
+
+.start-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #131721;
+}
+
+.headline-second {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.title {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.nemo {
+  width: 20rem;
+  height: 8rem;
+  border: 17px solid #131721;
+  margin-right: 20px;
+}
+
+.dev {
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+
+/* nav 시작 */
+.nav {
+  position: fixed;
+  z-index: 3;
+  top: 0px;
+  right: 0px;
+  width: 100px;
+  height: 100vh;
+  padding: 100px 0;
+
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
+  display: flex;
+  justify-content: center;
+}
+
+.nav-name {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  padding-top: 40px;
+}
+
+.nav-line {
+  height: 0;
+  width: 65px;
+  border: 2px solid #131721;
+  margin-top: 10px;
+}
+
+.nav-pt {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+/* contents 시작 */
+
+.contents {
+  height: 100vh;
+  border: 1px solid tomato;
+  background-color: #dfe6ee;
+}
+
+.image {
+  position: relative;
+  border: 1px solid tomato;
+}
+
+img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.image-text p {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 120%;
+  text-shadow: 0 5px 15px rgb(0 0 0 / 100%);
+}
+
+.image-text span {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 120%;
+  text-shadow: 0 5px 15px rgb(0 0 0 / 100%);
+}
+
+.text {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+  border: 1px solid tomato;
+}
+
+.text p {
+  text-align: center;
+  color: #131721;
+  font-size: 60px;
+  font-weight: 900;
+}

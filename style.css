@@ -26,11 +26,23 @@ body {
   font-weight: 700;
 }
 
+.sub-title {
+  font-size: 44px;
+  font-weight: 500;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 4px solid #8e8e94;
+  color: #8e8e94;
+}
+
 .nemo {
   width: 20rem;
   height: 8rem;
-  border: 17px solid #131721;
+  border: 17px solid #8e8e94;
   margin: 0 20px;
+}
+.nemo:hover {
+  border: 17px solid #1a2a6c;
 }
 
 .dev {
@@ -63,12 +75,13 @@ body {
   justify-content: center;
   font-weight: 300;
   padding-top: 40px;
+  color: #8e8e94;
 }
 
 .nav-line {
   height: 0;
   width: 65px;
-  border: 2px solid #131721;
+  border: 2px solid #1a2a6c;
   margin-top: 10px;
 }
 
@@ -79,7 +92,17 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: 500;
+  color: #8e8e94;
 }
+.nav-name:hover {
+  color: #1a2a6c;
+  font-weight: 500;
+}
+.nav-pt:hover {
+  color: #1a2a6c;
+  font-weight: 700;
+}
+
 /* contents 시작 */
 
 .contents {
@@ -134,7 +157,11 @@ img {
 
 .text p {
   text-align: center;
-  color: #131721;
+  color: #8e8e94;
   font-size: 60px;
   font-weight: 900;
+}
+
+.text p:hover {
+  color: #1a2a6c;
 }

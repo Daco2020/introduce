@@ -191,6 +191,23 @@ button {
   font-weight: 400;
 }
 
+/* nav + */
+
+.nemo {
+  animation-duration: 1s;
+  animation-name: open;
+}
+
+@keyframes open {
+  from {
+    width: 0%;
+  }
+  to {
+    padding-left: 0%;
+    width: 34%;
+  }
+}
+
 /* 미디어쿼리 */
 
 @media screen and (max-width: 65rem) /* 0~48rem 일 때 라는 뜻 */ {
@@ -236,5 +253,19 @@ button {
     border: none;
     font-size: 1.5rem;
     font-weight: 400;
+  }
+  .nemo {
+    animation-duration: 1s;
+    animation-name: open;
+  }
+
+  @keyframes open {
+    from {
+      width: 0%;
+    }
+    to {
+      padding-left: 0%;
+      width: 21%;
+    }
   }
 }

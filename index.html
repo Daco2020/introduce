@@ -41,6 +41,8 @@
       <a href="#six" class="nav-pt">도전</a>
       <a href="#seven" class="nav-pt">성찰</a>
       <a href="#eight" class="nav-pt">폴짝</a>
+      <span class="nav-line"></span>
+      <a href="#end" class="nav-name">당신은?</a>
     </nav>
 
     <main class="contents">
@@ -162,14 +164,29 @@
           <img src="img/폴짝.jpg" />
         </div>
         <div class="text">
-          <a href="#">
+          <a href="#end">
             <p>나는 사람들의 가슴을 폴짝폴짝 뛰게 만드는 개발자야</p></a
           >
         </div>
       </div>
+      <div class="contents start-page end-page" id="end">
+        <div class="headline mb-5">
+          <div class="headline-first end-title title">
+            너는 어떤 개발자니?<br />너의 이야기도 들려줘
+            </div>
+          <div class="headline-second">
+            <form class="js-toDoForm">
+          <input class="nemo-fin" type="text" placeholder="나는..."></input>
+          </form>
+          </div>
+          <div class="headline-third">
+            <div class="sub-title">
+              <ul class="js-toDoList"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-
-    <div class="end-page"></div>
 
     <section>
       <script src="script.js"></script>

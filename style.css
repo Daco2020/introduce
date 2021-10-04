@@ -73,8 +73,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 300;
-  padding-top: 40px;
+  font-weight: 500;
+  padding: 20px 0;
   color: #8e8e94;
 }
 
@@ -145,6 +145,7 @@ img {
 }
 
 .text {
+  padding-top: 10px;
   height: 20vh;
   display: flex;
   justify-content: center;
@@ -153,9 +154,87 @@ img {
   font-size: 60px;
   font-weight: 900;
   text-align: center;
+  line-height: 120%;
   color: #8e8e94;
 }
 
 .text p:hover {
   color: #1a2a6c;
+}
+
+.end-page {
+  background-color: white;
+}
+
+.end-title {
+  line-height: 120%;
+}
+
+input {
+  width: 55rem;
+  height: 8rem;
+  border: 17px solid #1a2a6c;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+ul {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+button {
+  background-color: white;
+  border: none;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/* 미디어쿼리 */
+
+@media screen and (max-width: 65rem) /* 0~48rem 일 때 라는 뜻 */ {
+  .image-text p {
+    font-size: 2rem;
+  }
+  .image-text span {
+    font-size: 1rem;
+  }
+  .text {
+    font-size: 1.7rem;
+  }
+
+  .title {
+    font-size: 3rem;
+    height: 2rem;
+  }
+  .sub-title {
+    font-size: 1.1rem;
+  }
+  .nemo {
+    width: 5rem;
+    height: 3.5rem;
+    border: 0.5rem solid #8e8e94;
+    margin: 0.7rem 0.3rem 0 0.3rem;
+  }
+  .nemo:hover {
+    border: 0.5rem solid #1a2a6c;
+  }
+
+  input {
+    width: 30rem;
+    height: 6rem;
+    font-size: 2.3rem;
+    font-weight: 500;
+    border: 12px solid #1a2a6c;
+  }
+  ul {
+    font-size: 2rem;
+  }
+  button {
+    background-color: white;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
 }

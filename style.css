@@ -107,13 +107,11 @@ body {
 
 .contents {
   height: 100vh;
-  border: 1px solid tomato;
   background-color: #dfe6ee;
 }
 
 .image {
   position: relative;
-  border: 1px solid tomato;
 }
 
 img {
@@ -152,14 +150,10 @@ img {
   justify-content: center;
   align-items: center;
   padding-bottom: 3rem;
-  border: 1px solid tomato;
-}
-
-.text p {
-  text-align: center;
-  color: #8e8e94;
   font-size: 60px;
   font-weight: 900;
+  text-align: center;
+  color: #8e8e94;
 }
 
 .text p:hover {

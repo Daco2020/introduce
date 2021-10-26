@@ -164,11 +164,12 @@ img {
 
 .end-page {
   background-color: white;
-  height: 200vh;
+  height: 180vh;
 }
 
 .end-title {
   line-height: 120%;
+  padding-bottom: 50px;
 }
 
 input {

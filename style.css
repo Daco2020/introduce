@@ -164,6 +164,7 @@ img {
 
 .end-page {
   background-color: white;
+  height: 200vh;
 }
 
 .end-title {
@@ -269,3 +270,4 @@ button {
     }
   }
 }
+

@@ -164,7 +164,7 @@ img {
 
 .end-page {
   background-color: white;
-  height: 180vh;
+  height: 150vh;
 }
 
 .end-title {
@@ -272,3 +272,6 @@ button {
   }
 }
 
+#disqus_thread {
+  margin-top: 50px;
+}

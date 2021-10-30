@@ -1,69 +1,31 @@
-// const todoForm = document.querySelector(".js-toDoForm"),
-//   toDoInput = todoForm.querySelector("input"),
-//   toDoList = document.querySelector(".js-toDoList");
+//스크롤이 내려감에따라 navbar에 표시가 된다
+let sections = document.querySelectorAll("section"); // 모든 section태그 선택 
 
-// const TODOS_LS = "toDos";
+const inView = (section) => {
+  //  해당섹션 범위내에 있으면 true아니면 false 리턴
+    let top = section.offsetTop;
+    let height = section.offsetHeight;
 
-// let toDos = [];
+        while (section.offsetParent) {
+    section = section.offsetParent;
+    top += section.offsetTop;
+    }
+        return (
+    top < window.pageYOffset + window.innerHeight &&
+    top + height > window.pageYOffset
+    );
+};
+window.onscroll = () => {
+  // 스크롤을 내릴떄마다 호출이되는 window 이벤트
+    let next = false;
+    sections.forEach((section) => {
+        let menu = document.querySelector(`a[href='#${section.id}']`);// 섹션과 관련된 메뉴를 찾아옴
 
-// function deleteToDo(event) {
-//   const btn = event.target;
-//   const li = btn.parentNode;
-//   toDoList.removeChild(li);
-//   const cleanToDos = toDos.filter(function (toDo) {
-//     // 필터 -> list 관련 //
-//     return toDo.id !== parseInt(li.id);
-//     // parseInt  는 스트링을 숫자로 바꿔준다//
-//   });
-//   toDos = cleanToDos;
-//   saveToDos();
-// }
-
-// function saveToDos() {
-//   localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
-// }
-
-// function paintToDo(text) {
-//   const li = document.createElement("li");
-//   const delBtn = document.createElement("button");
-//   const span = document.createElement("span");
-//   const newId = toDos.length + 1;
-//   delBtn.innerText = "❌";
-//   delBtn.addEventListener("click", deleteToDo);
-//   span.innerText = text;
-//   li.appendChild(span);
-//   li.appendChild(delBtn);
-//   li.id = newId;
-//   toDoList.appendChild(li);
-//   const toDoObj = {
-//     text: text,
-//     id: newId,
-//   };
-//   toDos.push(toDoObj);
-//   saveToDos();
-// }
-
-// function handleSubmit(event) {
-//   event.preventDefault();
-//   const currentValue = toDoInput.value;
-//   paintToDo(currentValue);
-//   toDoInput.value = "";
-// }
-
-// function loadToDos() {
-//   const loadedToDos = localStorage.getItem(TODOS_LS);
-//   if (loadedToDos !== null) {
-//     const parsedToDos = JSON.parse(loadedToDos);
-//     parsedToDos.forEach(function (toDo) {
-//       //forEach -> array 관련 각각의 값을 불러올 수 있다
-//       paintToDo(toDo.text);
-//     });
-//   }
-// }
-
-// function init() {
-//   loadToDos();
-//   todoForm.addEventListener("submit", handleSubmit);
-// }
-
-// init();
+        if (inView(section) && !next) { // 스크린범위 안에 있으면 해당메뉴에 active부여 
+            menu.classList.add("active");
+            next = true;
+        } else {
+            menu.classList.remove("active");// 아닐시에 active제거
+        }
+    });
+};

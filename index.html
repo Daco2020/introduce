@@ -13,13 +13,13 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   </head>
-  <body>
+  <div>
     <section class="start-page" id="home">
       <div class="headline mb-5">
         <div class="headline-first title">안녕! 난 은찬이야.</div>
         <div class="headline-second">
           <div class="dev title">나는</div>
-          <a href="#one" class="nemo"></a>
+          <a class="nemo"></a>
           <div class="dev title">개발자야.</div>
         </div>
         <div class="headline-third">
@@ -46,7 +46,7 @@
     </nav>
 
     <main class="contents">
-      <div class="contents" id="one">
+      <section class="contents" id="one">
         <div class="image">
           <div class="image-text">
             <p>
@@ -59,8 +59,8 @@
         <div class="text">
           <a href="#two"><p>나는 원하는 거 다 이루는 개발자야.</p></a>
         </div>
-      </div>
-      <div class="contents" id="two">
+      </section>
+      <section class="contents" id="two">
         <div class="image">
           <div class="image-text">
             <p>
@@ -74,8 +74,8 @@
         <div class="text">
           <a href="#three"><p>나는 실수를 변명하지 않는 개발자야.</p></a>
         </div>
-      </div>
-      <div class="contents" id="three">
+      </section>
+      <section class="contents" id="three">
         <div class="image">
           <div class="image-text">
             <p>
@@ -89,8 +89,8 @@
         <div class="text">
           <a href="#four"><p>나는 뭣이 중헌지 아는 개발자야.</p></a>
         </div>
-      </div>
-      <div class="contents" id="four">
+      </section>
+      <section class="contents" id="four">
         <div class="image">
           <div class="image-text">
             <p>
@@ -104,8 +104,8 @@
         <div class="text">
           <a href="#five"><p>나는 후배의 방패가 되어주는 개발자야.</p></a>
         </div>
-      </div>
-      <div class="contents" id="five">
+      </section>
+      <section class="contents" id="five">
         <div class="image">
           <div class="image-text">
             <p>
@@ -121,8 +121,8 @@
             ><p>나는 "개발자는 이렇게 하는거야"라고 보여줄거야.</p></a
           >
         </div>
-      </div>
-      <div class="contents" id="six">
+      </section>
+      <section class="contents" id="six">
         <div class="image">
           <div class="image-text">
             <p>
@@ -136,8 +136,8 @@
         <div class="text">
           <a href="#seven"><p>나는 모든 것을 시도해보는 개발자야.</p></a>
         </div>
-      </div>
-      <div class="contents" id="seven">
+      </section>
+      <section class="contents" id="seven">
         <div class="image">
           <div class="image-text">
             <p>
@@ -151,8 +151,8 @@
         <div class="text">
           <a href="#eight"><p>나는 과거의 나를 돌아볼 줄 아는 개발자야.</p></a>
         </div>
-      </div>
-      <div class="contents" id="eight">
+      </section>
+      <section class="contents" id="eight">
         <div class="image">
           <div class="image-text">
             <p>
@@ -168,56 +168,27 @@
             <p>나는 사람들의 가슴을 폴짝폴짝 뛰게 만드는 개발자야</p></a
           >
         </div>
-      </div>
-      <div class="contents start-page end-page" id="end">
+      </section>
+      <section class="contents start-page end-page" id="end">
         <div class="headline mb-5">
           <div class="headline-first end-title title">
             너는 어떤 개발자니?<br />너의 이야기도 들려줘
             </div>
             <div id="disqus_thread"></div>
-
-          <!-- <div class="headline-second">
-            <form class="js-toDoForm">
-          <input class="nemo-fin" type="text" placeholder="나는..."></input>
-          </form>
-          </div>
-          <div class="headline-third">
-            <div class="sub-title">
-              <ul class="js-toDoList"></ul>
-            </div>
-          </div> -->
         </div>
-      </div>
+      </section>
     </main>
 
-    <section>
+    <footer>
       <script src="script.js"></script>
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"
-      ></script>
-      <!-- <script>
-        jQuery(document).ready(function ($) {
-          $("a[href^='#']").click(function (event) {
-            event.preventDefault();
-            var target = $(this.hash);
-            $("html, body").animate({ scrollTop: target.offset().top }, 500);
-          });
-        });
-      </script> -->
-  </section>
+        crossorigin="anonymous">
+      </script>
+
 
       <script>
-        /**
-        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-        /*
-        var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-        */
         (function() { // DON'T EDIT BELOW THIS LINE
         var d = document, s = d.createElement('script');
         s.src = 'https://daco2020.disqus.com/embed.js';
@@ -226,9 +197,7 @@
         })();
       </script>
       <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-
-
-
+    </footer>
+  
   </body>
 </html>

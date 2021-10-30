@@ -103,6 +103,12 @@ body {
   font-weight: 700;
 }
 
+.active {
+  color:#1a2a6c;
+  font-size: larger;
+  font-weight: 800;
+}
+
 /* contents 시작 */
 
 .contents {
